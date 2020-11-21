@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "960766902287",
+    "firebase_url": "https://clickncollect-1233d.firebaseio.com",
+    "project_id": "clickncollect-1233d",
+    "storage_bucket": "clickncollect-1233d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960766902287:android:520297e8ea2d3d6827a37a",
+        "android_client_info": {
+          "package_name": "com.example.clickncollect_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960766902287-qmdkg73idme0k5mumhmhl3es6mcam6bu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnk80HHxipUYeWMX9JrUwNcQua-R1FBF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960766902287-qmdkg73idme0k5mumhmhl3es6mcam6bu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
