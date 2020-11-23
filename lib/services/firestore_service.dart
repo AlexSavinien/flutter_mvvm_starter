@@ -9,8 +9,21 @@ final firestoreProvider = Provider<FirestoreService>((ref) {
 });
 
 class FirestoreService {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final AuthentificationService _auth;
-
   FirestoreService(this._auth);
+
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
+  CollectionReference getUsersCollection(String collection) =>
+      _firestore.collection(collection);
+
+  Future<void> addUser(Map<String, dynamic> user) async {
+    try {
+      var uid = _auth.currentUser.uid;
+      await getUsersCollection('users').doc(uid).set(user);
+    } catch (e) {
+      print('coucou');
+      print(e);
+    }
+  }
 }
